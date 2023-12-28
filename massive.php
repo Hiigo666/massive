@@ -18,8 +18,6 @@ function apply(array $arr, string $command, int $index, $newThink)
             unset($result[$index]);
         break;
         case "change":
-            
-
     }
 }
  
