@@ -42,4 +42,23 @@ foreach ($arr as $value){
         }
     }
 }
-print_r($dada);
+//print_r($dada);
+
+$someNumbers = [3, 4, 7, 1, 5, 9];
+
+function bubbleSort(array $arr)
+{
+    for($limit = count($arr)-1; $limit > 0; $limit -= 1) {
+        for($i = 0; $i < $limit; $i++) {
+            if($arr[$i] > $arr[$i + 1]) {
+                $temp = $arr[$i];
+                $arr[$i] = $arr[$i + 1];
+                $arr[$i + 1] = $temp;
+            }
+        }
+    }
+    return($arr);
+}
+$test = bubbleSort($someNumbers);
+
+print_r($test);
